@@ -22,7 +22,7 @@ const Navbar = () => {
 
               <a href="#" className="flex items-center py-4 px-2">
                 <img src="logo.jpg" alt="Logo" className="h-8 w-8 mr-2" />
-                <span className="font-semibold text-gray-500 text-lg">Wani's Page</span>
+                <span className="font-semibold text-gray-500 text-lg">Main Page</span>
               </a>
             </div>
 
@@ -66,9 +66,9 @@ const Navbar = () => {
               <svg className=" w-6 h-6 text-gray-500 hover:text-green-500 "
                 x-show="!showMenu"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLineCap="round"
+                strokeLineJoin="round"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
               >
