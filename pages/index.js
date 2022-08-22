@@ -14,6 +14,7 @@ export default function Home() {
       <section id="quotation"> <hr/> <div className=' min-h-screen ' ></div> </section>
       <section id="contact"> <hr/> <div className=' min-h-screen ' ></div> </section>
       <section id="gallery"> <Header /><Header /><Header /></section>
+      <hr/>
     </div>
   )
 }
