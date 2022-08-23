@@ -12,7 +12,7 @@ const Navbar = () => {
   const defaultNavbarMobile = "block text-sm px-2 py-4 hover:bg-red-500 transition duration-300"
   const activeNavbarMobile = "block text-sm px-2 py-4 text-white bg-red-500 font-semibold"
   const offset = -65
-  const offsetMobile = -378
+  const offsetMobile = -430 
 
   return (
     <nav className="bg-white shadow-lg sticky top-0">
@@ -21,10 +21,13 @@ const Navbar = () => {
           <div className="flex space-x-7">
             <div>
 
+            
+              <Link smooth spy to="home" offset={offset}>
               <a href="#" className="flex items-center py-4 px-2">
                 <img src="logo.jpg" alt="Logo" className="h-8 w-8 mr-2" />
                 <span className="font-semibold text-gray-500 text-lg">Wani&apos;s Page</span>
               </a>
+              </Link>
             </div>
 
             <div className="hidden lg:flex items-center space-x-1">
@@ -88,10 +91,6 @@ const Navbar = () => {
         <div className=" mobile-menu float">
           <ul className="">
 
-
-            <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="home" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
-              Home
-            </Link>
 
             <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="medical-card" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
               Medical Card
