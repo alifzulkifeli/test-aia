@@ -24,7 +24,7 @@ const Navbar = () => {
 
               <a href="#" className="flex items-center py-4 px-2">
                 <img src="logo.jpg" alt="Logo" className="h-8 w-8 mr-2" />
-                <span className="font-semibold text-gray-500 text-lg">{"Wani's Page"}</span>
+                <span className="font-semibold text-gray-500 text-lg">Wani&apos;s Page</span>
               </a>
             </div>
 
