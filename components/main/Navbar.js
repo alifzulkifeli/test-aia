@@ -7,11 +7,10 @@ const Navbar = () => {
   const [toggle, settoggle] = useState(false);
   const [highlighted, sethighlighted] = useState("")
 
-  const defaultNavbar = "py-4 px-2 text-gray-500 font-semibold hover:text-green-500 hover:border-b-4 hover:border-green-500 transition duration-300"
-  const activeNavbar = "py-4 px-2 text-green-500 border-b-4 border-green-500 font-semibold"
-  const defaultNavbarMobile = "block text-sm px-2 py-4 hover:bg-green-500 transition duration-300"
-  const activeNavbarMobile = "block text-sm px-2 py-4 text-white bg-green-500 font-semibold"
-
+  const defaultNavbar = "py-4 px-2 text-gray-500 font-semibold hover:text-red-500 hover:border-b-4 hover:border-red-500 transition duration-300"
+  const activeNavbar = "py-4 px-2 text-red-500 border-b-4 border-red-500 font-semibold"
+  const defaultNavbarMobile = "block text-sm px-2 py-4 hover:bg-red-500 transition duration-300"
+  const activeNavbarMobile = "block text-sm px-2 py-4 text-white bg-red-500 font-semibold"
   const offset = -65
   const offsetMobile = -378
 
@@ -28,43 +27,48 @@ const Navbar = () => {
               </a>
             </div>
 
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="hidden lg:flex items-center space-x-1">
 
-              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="home" offset={offset}>
-                Home
-              </Link>
-
-              <Link activeClass={activeNavbar}  className={defaultNavbar} smooth spy to="medical-card" offset={offset}>
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="medical-card" offset={offset}>
                 Medical Card
               </Link>
 
-              <Link activeClass={activeNavbar}  className={defaultNavbar} smooth spy to="hibah" offset={offset}>
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="hibah" offset={offset}>
                 Hibah
               </Link>
 
 
-              <Link activeClass={activeNavbar}  className={defaultNavbar} smooth spy to="quotation" offset={offset}>
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="quotation" offset={offset}>
                 Quotation
               </Link>
 
-              <Link activeClass={activeNavbar}  className={defaultNavbar} smooth spy to="contact" offset={offset}>
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="career-info" offset={offset}>
+                Career Info
+              </Link>
+
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="saving-investment" offset={offset}>
+                Saving and Investment
+              </Link>
+
+
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="contact" offset={offset}>
                 Contact
               </Link>
 
-              <Link activeClass={activeNavbar}  className={defaultNavbar} smooth spy to="gallery" offset={offset}>
+              <Link activeClass={activeNavbar} className={defaultNavbar} smooth spy to="gallery" offset={offset}>
                 Gallery
               </Link>
             </div>
           </div>
 
           {/* put whatsapp here */}
-          <div className="flex items-center  md:space-x-3 ">
-            <a href="https://wa.link/b0g0pw" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300 flex">Chat Us <IoLogoWhatsapp className=" ml-1" size={23} /> </a>
-          </div>
+          {/* <div className="flex items-center  lg:space-x-3 ">
+            <a href="https://wa.link/b0g0pw" className="py-2 px-2 font-medium text-white bg-red-500 rounded hover:bg-red-400 transition duration-300 flex">Chat Us <IoLogoWhatsapp className=" ml-1" size={23} /> </a>
+          </div> */}
 
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button onClick={() => settoggle(!toggle)} className="outline-none mobile-menu-butto ">
-              <svg className=" w-6 h-6 text-gray-500 hover:text-green-500 "
+              <svg className=" w-6 h-6 text-gray-500 hover:text-red-500 "
                 x-show="!showMenu"
                 fill="none"
                 strokeLinecap="round"
@@ -99,6 +103,14 @@ const Navbar = () => {
 
             <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="quotation" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
               Quotation
+            </Link>
+
+            <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="career-info" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
+            Career Info
+            </Link>
+
+            <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="saving-investment" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
+            Saving and Investment
             </Link>
 
             <Link activeClass={activeNavbarMobile} className={defaultNavbarMobile} smooth spy to="contact" offset={offsetMobile} onClick={() => settoggle(!toggle)}>
