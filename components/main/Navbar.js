@@ -59,7 +59,7 @@ const Navbar = () => {
 
           {/* put whatsapp here */}
           <div className="flex items-center  md:space-x-3 ">
-            <a href="https://wa.link/38ylx6" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300 flex">Chat Us <IoLogoWhatsapp className=" ml-1" size={23} /> </a>
+            <a href="https://wa.link/b0g0pw" className="py-2 px-2 font-medium text-white bg-green-500 rounded hover:bg-green-400 transition duration-300 flex">Chat Us <IoLogoWhatsapp className=" ml-1" size={23} /> </a>
           </div>
 
           <div className="md:hidden flex items-center">
